@@ -1,0 +1,234 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body{
+    background-image: url("../images/backgraund.jpg");
+    font-family: Arial;
+}
+
+.container{
+    padding: 0 50px;
+
+}
+
+.header{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.footer{
+    border-top: rgba(255, 255, 255, 0.5) solid 1px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.head-text{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+#menu{
+    border: solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#menu>div>a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+    background: linear-gradient(90deg, firebrick 44%,yellow 56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#footer-logo{
+    background: linear-gradient(90deg, firebrick 10%,yellow 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#logo:hover{
+    animation: 0.3s reverse hover-logo;
+}
+
+#title{
+    border-radius:0 0 7px 7px;
+    border:solid rgba(255, 255, 255, 0.5);
+    border-top: 0;
+    color: #ffffff;
+}
+
+.slide{
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.content{
+    padding-top: 30px;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•'; /* <-- Вот этот символ */
+    text-align: center;
+    opacity: .50;
+    color: #969696;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#txt{
+    font-size: 15px;
+}
+
+.txt-block:hover{
+    animation: 1s ease-in hover-image;
+}
+
+@keyframes hover-image {
+    0%{
+        transform: rotate(0deg) scale(1.02);
+    }
+
+    10%{
+        transform: rotate(2deg) scale(1.03);
+    }
+
+    20%{
+        transform: rotate(0deg) scale(1.03);
+    }
+
+    30%{
+        transform: rotate(-2deg) scale(1.03);
+    }
+
+    40%{
+        transform: rotate(0deg) scale(1.03);
+    }
+
+    50%{
+        transform: rotate(2deg) scale(1.03);
+    }
+
+    60%{
+        transform: rotate(0deg) scale(1.03);
+    }
+
+    70%{
+        transform: rotate(-2deg) scale(1.03);
+    }
+
+    80%{
+        transform: rotate(-1deg) scale(1.02);
+    }
+
+    90%{
+        transform: rotate(0deg) scale(1.01);
+    }
+
+    100%{
+        transform: rotate(0deg) scale(1.005);
+    }
+}
+
+@keyframes hover-logo {
+    0%{
+        background: linear-gradient(90deg, firebrick 42%,yellow 58%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    25%{
+        background: linear-gradient(90deg, firebrick 40%,yellow 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(90deg, firebrick 36%,yellow 63%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        background: linear-gradient(90deg, firebrick 35%,yellow 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to{
+        background: linear-gradient(90deg, firebrick 33%,yellow 66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+#info{
+    border: solid rgba(1, 0, 87, 0.5);
+    border-radius: 15px;
+    background-color: rgba(110, 110, 110, 0.3);
+    padding: 25px;
+}
+
+#photoman{
+    height: 200px;
+    border-radius: 7px;
+}
+
+#info{
+    text-shadow: -2px 0 2px rgba(135, 135, 135, 0.47);
+}
+
+.icon{
+    height: 25px;
+}
+
+#lincs>div{
+    margin: 15px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 15px;
+    border-radius: 15px;
+}
+
+#navbar>a{
+    text-decoration: none;
+    color: #000000;
+    margin: 15px;
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar>a:hover{
+    color: #000000;
+    text-shadow: 0px 0px 30px rgba(131, 16, 131, 1);
+    background-color: rgba(0, 113, 0, 0.8);
+}
+
+.col>a{
+    color: white;
+}
+
+hr{
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
